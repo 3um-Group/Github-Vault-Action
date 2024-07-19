@@ -1,9 +1,5 @@
-name: HashiCorp Vault Secrets
-author: Arky Asmal
+name: GitHub Vault Action
 description: Access secrets stored on HashiCorp Vault Secrets, in the HashiCorp Cloud Platform.
-branding:
-  icon: "briefcase"
-  color: "black"
 inputs:
   CLIENT_ID:
     default: ""
