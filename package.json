@@ -2,7 +2,7 @@
   "name": "github-vault-action-github-action",
   "version": "1.0.0",
   "description": "Access HashiCorp Vault Secrets deployed on the HashiCorp Cloud Platform, with increased support and customization. This is not to be confused with a self-hosted Hashicorp Vault Instance, which already has a Github action.",
-  "main": "action.yml",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "npx ts-node scripts/runScript.ts",
     "build": "npx ts-node scripts/buildScript.ts"
