@@ -1,4 +1,4 @@
-# Hashicorp Vault Secrets Github Action
+# GitHub Vault Action
 
 ## Introduction
 
@@ -12,6 +12,8 @@ However, as highlighted by their [documentation](https://developer.hashicorp.com
    - This is not possible if the repository lives in an organization and the user is not a Github organization owner/admin.
 
 This action provides a solution for the aforementioned problems, by using a service principal on your HashiCorp Cloud Platform account, to programmatically access Hashicorp Vault secrets in a Github action runner, and pass them into your workflows.
+
+Repository adapted from - aasmal97/HashicorpVaultSecrets
 
 ## Configuring a Service Principal
 
@@ -36,7 +38,7 @@ This action provides a solution for the aforementioned problems, by using a serv
 
 ```yaml
 name: Hashicorp Vault Secrets
-uses: aasmal97/HashicorpVaultSecrets@v1.2.0
+uses: 3um-Group/Github-Vault-Action@v1.1.0
 with:
   CLIENT_ID: ${{ secrets.HASHICORP_CLIENT_ID }}
   CLIENT_SECRET: ${{ secrets.HASHICORP_CLIENT_SECRET }}
@@ -90,7 +92,7 @@ To use this action's output in subsequent workflow steps, ensure your `id` from 
 steps:
   - name: Hashicorp Vault Secrets
     id: hashicorp-vault-secrets
-    uses: aasmal97/HashicorpVaultSecrets@v1.2.0
+    uses: 3um-Group/Github-Vault-Action@v1.1.0
     with:
       CLIENT_ID: ${{ secrets.HASHICORP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.HASHICORP_CLIENT_SECRET }}
@@ -110,7 +112,7 @@ To use this, you must use the `GENERATE_ENV` input.
 ```yaml
 steps:
   - name: Hashicorp Vault Secrets
-    uses: aasmal97/HashicorpVaultSecrets@v2.0.0
+    uses: 3um-Group/Github-Vault-Action@v1.1.0
     with:
       CLIENT_ID: ${{ secrets.HASHICORP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.HASHICORP_CLIENT_SECRET }}
@@ -134,7 +136,7 @@ steps:
 steps:
   - name: Hashicorp Vault Secrets
     id: hashicorp-vault-secrets
-    uses: aasmal97/HashicorpVaultSecrets@v1.2.0
+    uses: 3um-Group/Github-Vault-Action@v1.1.0
     with:
       CLIENT_ID: ${{ secrets.HASHICORP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.HASHICORP_CLIENT_SECRET }}
