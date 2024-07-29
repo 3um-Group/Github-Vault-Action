@@ -1,5 +1,7 @@
 # GitHub Vault Action
 
+Adapted from https://github.com/aasmal97/HashicorpVaultSecrets
+
 ## Introduction
 
 Currently, [Hashicorp Vault Secrets](https://developer.hashicorp.com/hcp/docs/vault-secrets) has a direct one-click intergation that links a Github Repo to an app of their choosing.
